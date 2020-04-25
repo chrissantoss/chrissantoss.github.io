@@ -608,8 +608,27 @@ li {
   display: inline-block;
   text-align: center;
 }
-
-
+@keyframes animate {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-50px);
+  }
+}
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
   
 }
 
@@ -679,4 +698,15 @@ li {
   .timeline p{
     font-size: 100%;
   }
+  @keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 }
